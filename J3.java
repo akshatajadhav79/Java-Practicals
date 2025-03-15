@@ -57,7 +57,7 @@ class J3{
 
         System.out.println("Array="+a);
 
-        Iterator<Integer> i = a.iterator();
+        Iterator<Integer> i = a.iterator(a.size());
         while (i.hasPrevious()){
                 System.out.println("Element is="+i.Previous());
 
