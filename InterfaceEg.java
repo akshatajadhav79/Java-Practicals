@@ -1,15 +1,17 @@
-// interface Drawable{
-//         void draw();
-// }
-// class Line implements Drawable {
-//     @Override
-//     public void draw() {
-//         System.out.println("Drawing a line.");
-//     }
-// } 
+// InterfaceEg.java
+interface Drawable {
+    void draw();
+}
 
-class InterfaceEg{
+class Line implements Drawable {
+    public void draw() {
+        System.out.println("Drawing a line.");
+    }
+}
+
+public class InterfaceEg {
     public static void main(String[] args) {
-        System.out.println("hi");
+        Drawable d = new Line();
+        d.draw();
     }
 }
